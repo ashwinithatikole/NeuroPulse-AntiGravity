@@ -1,0 +1,111 @@
+NeuroPulse Seizure Detector - Full Tensor Inventory
+==============================================
+
+Index: 0 | Name: serving_default_input_layer:0
+Shape: [   1 1024    1] | Dtype: <class 'numpy.int8'>
+Data Sample: [0 0 0 0 0]
+--------------------
+Index: 1 | Name: arith.constant
+Shape: [] | Dtype: <class 'numpy.int32'>
+Data Sample: [-3]
+--------------------
+Index: 2 | Name: sequential_1/conv1d_1/convolution/ExpandDims
+Shape: [   1    1 1024    1] | Dtype: <class 'numpy.int8'>
+Data Sample: [0 0 0 0 0]
+--------------------
+Index: 3 | Name: tfl.pseudo_qconst6
+Shape: [16] | Dtype: <class 'numpy.int32'>
+Data Sample: [204055920   2537081   2585406  -1233810 184858048]
+--------------------
+Index: 4 | Name: sequential_1/conv1d_1/Relu;sequential_1/conv1d_1/BiasAdd;sequential_1/conv1d_1/convolution/Squeeze;;sequential_1/conv1d_1/convolution
+Shape: [16  1  3  1] | Dtype: <class 'numpy.int8'>
+Data Sample: [-127 -127 -125  127   -2]
+--------------------
+Index: 7 | Name: arith.constant1
+Shape: [3] | Dtype: <class 'numpy.int32'>
+Data Sample: [  -1 1022   16]
+--------------------
+Index: 8 | Name: sequential_1/conv1d_1/Relu;sequential_1/conv1d_1/BiasAdd;sequential_1/conv1d_1/convolution/Squeeze;
+Shape: [   1 1022   16] | Dtype: <class 'numpy.int8'>
+Data Sample: [0 0 0 0 0]
+--------------------
+Index: 9 | Name: sequential_1/conv1d_1_2/convolution/ExpandDims
+Shape: [   1    1 1022   16] | Dtype: <class 'numpy.int8'>
+Data Sample: [0 0 0 0 0]
+--------------------
+Index: 10 | Name: tfl.pseudo_qconst4
+Shape: [32] | Dtype: <class 'numpy.int32'>
+Data Sample: [-63311 -61770 -61002 -64315 -61243]
+--------------------
+Index: 11 | Name: sequential_1/conv1d_1_2/Relu;sequential_1/conv1d_1_2/BiasAdd;sequential_1/conv1d_1_2/convolution/Squeeze;;sequential_1/conv1d_1_2/convolution
+Shape: [32  1  3 16] | Dtype: <class 'numpy.int8'>
+Data Sample: [ 113 -122  112  114  127]
+--------------------
+Index: 12 | Name: sequential_1/conv1d_1_2/Relu;sequential_1/conv1d_1_2/BiasAdd;sequential_1/conv1d_1_2/convolution/Squeeze;;sequential_1/conv1d_1_2/convolution1
+Shape: [32  1  3 16] | Dtype: <class 'numpy.int8'>
+Data Sample: [0 0 0 0 0]
+--------------------
+Index: 13 | Name: sequential_1/conv1d_1_2/Relu;sequential_1/conv1d_1_2/BiasAdd;sequential_1/conv1d_1_2/convolution/Squeeze;;sequential_1/conv1d_1_2/convolution2
+Shape: [   1    1 1020   32] | Dtype: <class 'numpy.int8'>
+Data Sample: [0 0 0 0 0]
+--------------------
+Index: 14 | Name: arith.constant2
+Shape: [3] | Dtype: <class 'numpy.int32'>
+Data Sample: [  -1 1020   32]
+--------------------
+Index: 15 | Name: sequential_1/conv1d_1_2/Relu;sequential_1/conv1d_1_2/BiasAdd;sequential_1/conv1d_1_2/convolution/Squeeze;
+Shape: [   1 1020   32] | Dtype: <class 'numpy.int8'>
+Data Sample: [0 0 0 0 0]
+--------------------
+Index: 16 | Name: sequential_1/flatten_1/Shape
+Shape: [3] | Dtype: <class 'numpy.int32'>
+Data Sample: [   1 1020   32]
+--------------------
+Index: 17 | Name: arith.constant3
+Shape: [1] | Dtype: <class 'numpy.int32'>
+Data Sample: [0]
+--------------------
+Index: 18 | Name: arith.constant4
+Shape: [1] | Dtype: <class 'numpy.int32'>
+Data Sample: [1]
+--------------------
+Index: 19 | Name: sequential_1/flatten_1/strided_slice
+Shape: [] | Dtype: <class 'numpy.int32'>
+Data Sample: [1]
+--------------------
+Index: 20 | Name: arith.constant5
+Shape: [] | Dtype: <class 'numpy.int32'>
+Data Sample: [32640]
+--------------------
+Index: 21 | Name: sequential_1/flatten_1/Reshape/shape
+Shape: [2] | Dtype: <class 'numpy.int32'>
+Data Sample: [0 0]
+--------------------
+Index: 22 | Name: sequential_1/flatten_1/Reshape
+Shape: [    1 32640] | Dtype: <class 'numpy.int8'>
+Data Sample: [0 0 0 0 0]
+--------------------
+Index: 23 | Name: tfl.pseudo_qconst2
+Shape: [64] | Dtype: <class 'numpy.int32'>
+Data Sample: [-414790 -418123  293051  288805  289594]
+--------------------
+Index: 24 | Name: sequential_1/dense_1/MatMul;sequential_1/dense_1/Relu;sequential_1/dense_1/BiasAdd
+Shape: [   64 32640] | Dtype: <class 'numpy.int8'>
+Data Sample: [-123  124 -120 -124  124]
+--------------------
+Index: 25 | Name: sequential_1/dense_1/MatMul;sequential_1/dense_1/Relu;sequential_1/dense_1/BiasAdd1
+Shape: [   64 32640] | Dtype: <class 'numpy.int8'>
+Data Sample: [0 0 0 0 0]
+--------------------
+Index: 27 | Name: tfl.pseudo_qconst
+Shape: [1] | Dtype: <class 'numpy.int32'>
+Data Sample: [-435]
+--------------------
+Index: 28 | Name: sequential_1/dense_1_2/MatMul;sequential_1/dense_1_2/Add
+Shape: [ 1 64] | Dtype: <class 'numpy.int8'>
+Data Sample: [   2 -110 -110  106 -127]
+--------------------
+Index: 29 | Name: sequential_1/dense_1_2/MatMul;sequential_1/dense_1_2/Add1
+Shape: [ 1 64] | Dtype: <class 'numpy.int8'>
+Data Sample: [0 0 0 0 0]
+--------------------

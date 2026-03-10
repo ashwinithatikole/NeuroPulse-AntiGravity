@@ -1,0 +1,10 @@
+# Xilinx Vivado .gitignore
+*.log
+*.jou
+*.str
+.Xil/
+*.pb
+*.vdi
+*.os
+*.jou
+vivado*
