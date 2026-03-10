@@ -8,3 +8,7 @@
 *.os
 *.jou
 vivado*
+
+# Personal & Cache folders
+4semm/
+__pycache__/
